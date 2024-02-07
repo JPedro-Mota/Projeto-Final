@@ -46,9 +46,56 @@ body{
 }
 
 #title{
-    font-size: 2.25rem;
-    position: 
+    font-size: 2.25rem; 
+    position: relative;
 }
 
-#title;::after
+#title::after{
+    position: absolute;
+    content: '';
+    background-color: #6c63ff;
+    width: 8rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
 
+.intput-box label{
+    font-size: 1.1rem;
+    color: azure;
+    font-weight: 500;
+}
+
+.intput-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #262626;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.intput-field.span,
+.intput-field i {
+    color: azure;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+.intput-field input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: azure;
+    padding: 0 0.5rem;
+}
+
+.intput-field input ::-webkit-outer-spin-button,
+.intput-field input ::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.intput-field input:focus
